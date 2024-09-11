@@ -3,6 +3,7 @@
 ### Output - The right answer for the specific question.
 import hashlib
 
+
 def welcome_assignment_answers(question):
     #Students do not have to follow the skeleton for this assignment.
     #Another way to implement is using a "case" statements similar to C.
@@ -17,16 +18,16 @@ def welcome_assignment_answers(question):
     elif question == "Is a hashed message supposed to be un-hashed? - Yes/No":
         answer = "No"
     elif question == "What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
-        answer = "mc8100@nyu.edu"
+        email = "mc8100@nyu.edu"
         sha256_hash = hashlib.sha256(email.encode()).hexdigest()
         return sha256_hash
     elif question == "Is MD5 a secured hashing algorithm? - Yes/No":
-        answer = "No"
+        return "No"
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-        answer = 7
+        return 5
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
-        answer = 3
-    else: 
+        return 3
+    else:
         ### you should understand why this else case should be included
         ### what happens if there is a typo in one of the questions?
         ### maybe put something here to flag an issue and catch errors
@@ -49,4 +50,4 @@ if __name__ == "__main__":
 #"What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
 #"Is MD5 a secured hashing algorithm? - Yes/No":
 #"What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-#"What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
+#"What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number
